@@ -12,7 +12,7 @@
   --h5: 12px;
   --h6: 10px;
   --p: 16px;
-  --subh: 70px;
+  --subh: 60px;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -185,13 +185,14 @@ img {
 /* Home Banner */
 
 .homebanner {
-    padding: 13rem 0;
+    padding: 10rem 0;
 }
 
 .homebanner__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .homebanner__info {
@@ -215,7 +216,7 @@ img {
 
 /* Home Services */
 .homeservices {
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--clr-dark);
 }
 .homeservices__wrapper {
@@ -253,7 +254,7 @@ img {
 
 /* Home About */
 .homeabout{
-    padding: 5rem 0;
+    padding: 10rem 0;
 }
 
 .homeabout__wrapper {
@@ -293,7 +294,7 @@ img {
 
 /* Home Trends */
 .hometrends {
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--clr-dark);
 }
 
@@ -356,7 +357,7 @@ img {
 
 .cta__wrapper h3{
     font-size: var(--h3);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -375,6 +376,7 @@ img {
 .footer__socials{
     display: flex;
     gap: 1rem;
+    font-size: 2rem;
 }
 
 .footer__socials a{
@@ -382,7 +384,7 @@ img {
 }
 
 .aboutbanner {
-    padding: 13rem 0;
+    padding: 10rem 0;
 }
 .ab__text{
     max-width: 50rem;
@@ -412,15 +414,15 @@ img {
     justify-items: stretch
 }
 
-#chevron{
-    position: absolute;
+#chevron {
+    position:relative;
     left: 50%;
     font-size: 4rem;
 }
 
 /* About Trends */
 .aboutrecent{
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--clr-dark);
 }
 .aboutrecent__wrapper {
@@ -469,8 +471,149 @@ img {
     flex-direction: column;
 }
 
+/* Services Banner */
+.services__section{
+    padding: 10rem 0;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 10rem 0;
+}
+.services__left {
+    max-width: 51.9rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.services__items:last-child {
+    padding-bottom: 0rem;
+}
+
+.services__left h1{
+    font-size: var(--subh);
+    color: var(--clr-primary);
+    font-weight: bold;
+    line-height: 6rem;
+    margin-bottom: 5rem;
+    text-align: left;
+}
+
+.services__price {
+    margin-top: 5rem;
+}
+
+.services__price p {
+    font-size: var(--h2);
+    font-weight: bold;
+    color: var(--clr-primary);
+}
+
+.services__right img:last-child {
+    position: absolute;
+    left:0rem;
+    z-index: 1;
+    opacity: 0.55;
+    filter: contrast(0.8);
+}
+
+.services__content:nth-child(even) .services__right img:last-child {
+    display: none;
+}
+
+.services__content:nth-child(even) {
+    color: var(--clr-light);
+}
+.services__right {
+    position: relative;
+}
+
+.services__content:last-child {
+    padding-bottom: 0rem;
+}
 
 
+.services__content:nth-child(even) {
+  background-color: var(--clr-dark);
+}
+
+.services__content:nth-child(even) .services__items {
+  flex-direction: row-reverse;
+}
+
+.services__section a{
+    font-size: 4rem;
+    left: 50%;
+    position: relative;
+    bottom: 5rem;
+}
+
+/* Contact Page */
+.contactpage {
+    padding: 10rem 0;
+    background-color: var(--clr-dark);
+}
+.contactpage h1{
+    font-size: var(--subh);
+    color: var(--clr-primary);
+    font-weight: bold;
+    margin-top: 7rem;
+}
+
+.contactpage__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactpage__info {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+}
+.contactpage__info p {
+    color: var(--clr-light);
+    display: flex;
+}
+.contactpage__info--icons li a{
+    display: flex;
+    flex-direction: row;
+}
+
+.contactpage__info--icons li:last-child a{
+    height: 16px;
+}
+
+
+
+.contactpage__info .contactpage__info--socials ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contactpage__info .contactpage__info--socials ul li i {
+    color: var(--clr-light);
+}
+
+.contactpage__input {
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    gap: 2rem;
+}
+
+.contactpage__input textarea{
+    height: 10rem;
+}
+.contactpage__input input {
+    height: 5rem;
+}
 /* Assets */
 
 .btn {
@@ -485,7 +628,7 @@ img {
 .btn.bg-primary {
   background-color: var(--clr-primary);
   color: var(--clr-light);
-  font-weight: 700;
+  font-weight: 500;
 }
 .btn.bg-primary:hover {
   background-color: var(--clr-light);
