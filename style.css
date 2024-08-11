@@ -605,6 +605,9 @@ a {
   .aboutrecent__wrapper {
     grid-template-columns: 1fr;
   }
+  .card img:hover{
+    display: none;
+  }
 }
 
 /* Services Banner */
